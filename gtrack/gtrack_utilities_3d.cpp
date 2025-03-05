@@ -54,8 +54,15 @@
 #define GTRACK_BORESIGHT_STATIC_ANGLE                           (6*PI/180.f)
 #define GTRACK_BORESIGHT_STATIC_RANGE                           (2.0f)
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-const float pInit[] = {0.f, 0.f, 0.f, 0.5f, 0.5f, 0.5f, 1.f, 1.f, 1.f};
+    const float pInit[] = { 0.f, 0.f, 0.f, 0.5f, 0.5f, 0.5f, 1.f, 1.f, 1.f };
+
+#ifdef __cplusplus
+}
+#endif
 const float spreadMin[] = {1.0f, 10*PI/180.f, 10*PI/180.f, 0.5f};
 
 /**

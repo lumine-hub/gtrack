@@ -42,8 +42,13 @@
 #include "gtrack.h"
 #include "gtrack_int.h"
 
-extern const float pInit[];
+#ifdef GTRACK_2D
+const float pInit[] = { 0.f, 0.f, 0.5f, 0.5f, 1.f, 1.f };
+#endif
 
+#ifdef GTRACK_3D
+const float pInit[] = { 0.f, 0.f, 0.f, 0.5f, 0.5f, 0.5f, 1.f, 1.f, 1.f };
+#endif
 /**
 *  @b Description
 *  @n

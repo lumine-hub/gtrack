@@ -19,7 +19,8 @@ GTRACK_measurementPoint* parseRecvData(char* data, const uint16_t mNum);
 
 int sendData(SOCKET socket, const char* data);
 
-char* parseSendData();
+// char* parseSendData();
+char* parseSendData(GTRACK_targetDesc* targetDescr, uint16_t tNum, int frameId, uint8_t* bestIndex, uint16_t mNum, uint8_t* isUniqueIndex);
 
 void printMeasurementPoints(GTRACK_measurementPoint* points, const uint16_t mNum);
 

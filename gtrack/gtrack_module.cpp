@@ -160,7 +160,7 @@ void gtrack_moduleAllocate(GtrackModuleInstance *inst, GTRACK_measurementPoint *
     uint16_t allocNum;
     float dist;
     float allocSNR;
-    GTrack_ListElem *tElemFree;
+    GTrack_ListElem *tElemFree = NULL;
     GTrack_ListElem *tElemActive;
     uint16_t uid;
     bool isBehind;

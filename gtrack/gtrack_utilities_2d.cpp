@@ -46,8 +46,15 @@
 
 #define PI 3.14159265358979323846f
 #define RAD2DEG (180.f/PI)
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-const float pInit[] = {0.f, 0.f, 0.5f, 0.5f, 1.f, 1.f};
+	const float pInit[] = { 0.f, 0.f, 0.5f, 0.5f, 1.f, 1.f };
+
+#ifdef __cplusplus
+}
+#endif
 
 #define GTRACK_NOMINAL_RANGE_SPREAD                             (0.5f)          /* Default value to initialize the range spread */
 #define GTRACK_NOMINAL_ANGULAR_SPREAD                           (2*PI/180.f)    /* Default value to initialize the angular spread */
